@@ -10,4 +10,12 @@ O domínio escolhido para o projeto da disciplina de Banco de Dados II foi uma B
  
 ### Criando o Banco de Dados
   - Abrir o pgAdmin
+  
 ![pgAdmin4](https://user-images.githubusercontent.com/40742096/234708693-a42f522f-7b08-465e-8a85-72db77a24c84.png)
+
+- Clique com o direito em Databases, selecione Create > Database
+![image](https://user-images.githubusercontent.com/40742096/234709548-f7b55ae7-0d09-421c-96d4-cbd02a5e56f0.png)
+
+- Nomeie o banco como db_atacadista e clique em Save.
+
+![image](https://user-images.githubusercontent.com/40742096/234709747-0dab4b09-2c35-4146-ac7a-416de6dfbc60.png)
