@@ -12,9 +12,10 @@ O domínio escolhido para o projeto da disciplina de Banco de Dados II foi uma B
 ### Faça uma Copia do Repositório para sua máquina
  - Clique em Code
  - Copie o link HTTPS para fazer o git clone
- - Ou Clique em Download ZIP, então clique com o direito no arquivo ZIP na pasta que o arquivo se encontra e em extrair o conteúdo do arquivo
+ - Ou Clique em Download ZIP
+ - Clique com o direito no arquivo ZIP na pasta que o arquivo se encontra e em extrair o conteúdo do arquivo
+ 
 <img width="647" alt="downloadcodigo" src="https://user-images.githubusercontent.com/40742096/234862519-9636623a-8f7e-43ad-a2ea-b51270b67b9f.png">
-
  
 ### Criando o Banco de Dados
  - Abrir o pgAdmin
