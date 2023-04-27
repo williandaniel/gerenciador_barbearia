@@ -12,7 +12,7 @@ def clear_screen():
     elif operating_system == 'linux' or operating_system == 'darwin':
         subprocess.run('clear', shell=True)
 
-db = psycopg2.connect(database = 'db_barbearia', user = 'postgres', password = 'udesc', host = 'localhost', port = 5433)
+db = psycopg2.connect(database = 'db_barbearia', user = 'postgres', password = 'barbearia', host = 'localhost', port = 5433)
 
 print("Connection Successful to PostgreSQL")
 
