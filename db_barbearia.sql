@@ -5,7 +5,7 @@
 -- Dumped from database version 15.2
 -- Dumped by pg_dump version 15.2
 
--- Started on 2023-04-26 16:49:48
+-- Started on 2023-04-27 14:39:40
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -23,7 +23,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- TOC entry 223 (class 1259 OID 25004)
+-- TOC entry 214 (class 1259 OID 25027)
 -- Name: agendamento; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -41,7 +41,7 @@ CREATE TABLE public.agendamento (
 ALTER TABLE public.agendamento OWNER TO postgres;
 
 --
--- TOC entry 222 (class 1259 OID 25003)
+-- TOC entry 215 (class 1259 OID 25031)
 -- Name: agendamento_codagendamento_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -58,7 +58,7 @@ ALTER TABLE public.agendamento_codagendamento_seq OWNER TO postgres;
 
 --
 -- TOC entry 3373 (class 0 OID 0)
--- Dependencies: 222
+-- Dependencies: 215
 -- Name: agendamento_codagendamento_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -66,7 +66,7 @@ ALTER SEQUENCE public.agendamento_codagendamento_seq OWNED BY public.agendamento
 
 
 --
--- TOC entry 221 (class 1259 OID 24992)
+-- TOC entry 216 (class 1259 OID 25032)
 -- Name: cliente; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -86,7 +86,7 @@ CREATE TABLE public.cliente (
 ALTER TABLE public.cliente OWNER TO postgres;
 
 --
--- TOC entry 220 (class 1259 OID 24991)
+-- TOC entry 217 (class 1259 OID 25035)
 -- Name: cliente_codcliente_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -103,7 +103,7 @@ ALTER TABLE public.cliente_codcliente_seq OWNER TO postgres;
 
 --
 -- TOC entry 3374 (class 0 OID 0)
--- Dependencies: 220
+-- Dependencies: 217
 -- Name: cliente_codcliente_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -111,7 +111,7 @@ ALTER SEQUENCE public.cliente_codcliente_seq OWNED BY public.cliente.codcliente;
 
 
 --
--- TOC entry 217 (class 1259 OID 24971)
+-- TOC entry 218 (class 1259 OID 25036)
 -- Name: endereco; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -129,7 +129,7 @@ CREATE TABLE public.endereco (
 ALTER TABLE public.endereco OWNER TO postgres;
 
 --
--- TOC entry 216 (class 1259 OID 24970)
+-- TOC entry 219 (class 1259 OID 25041)
 -- Name: endereco_idendereco_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -146,7 +146,7 @@ ALTER TABLE public.endereco_idendereco_seq OWNER TO postgres;
 
 --
 -- TOC entry 3375 (class 0 OID 0)
--- Dependencies: 216
+-- Dependencies: 219
 -- Name: endereco_idendereco_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -154,7 +154,7 @@ ALTER SEQUENCE public.endereco_idendereco_seq OWNED BY public.endereco.idenderec
 
 
 --
--- TOC entry 219 (class 1259 OID 24980)
+-- TOC entry 220 (class 1259 OID 25042)
 -- Name: funcionario; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -176,7 +176,7 @@ CREATE TABLE public.funcionario (
 ALTER TABLE public.funcionario OWNER TO postgres;
 
 --
--- TOC entry 218 (class 1259 OID 24979)
+-- TOC entry 221 (class 1259 OID 25045)
 -- Name: funcionario_codfuncionario_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -193,7 +193,7 @@ ALTER TABLE public.funcionario_codfuncionario_seq OWNER TO postgres;
 
 --
 -- TOC entry 3376 (class 0 OID 0)
--- Dependencies: 218
+-- Dependencies: 221
 -- Name: funcionario_codfuncionario_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -201,7 +201,7 @@ ALTER SEQUENCE public.funcionario_codfuncionario_seq OWNED BY public.funcionario
 
 
 --
--- TOC entry 215 (class 1259 OID 24962)
+-- TOC entry 222 (class 1259 OID 25046)
 -- Name: servico; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -218,7 +218,7 @@ CREATE TABLE public.servico (
 ALTER TABLE public.servico OWNER TO postgres;
 
 --
--- TOC entry 214 (class 1259 OID 24961)
+-- TOC entry 223 (class 1259 OID 25051)
 -- Name: servico_codservico_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -235,7 +235,7 @@ ALTER TABLE public.servico_codservico_seq OWNER TO postgres;
 
 --
 -- TOC entry 3377 (class 0 OID 0)
--- Dependencies: 214
+-- Dependencies: 223
 -- Name: servico_codservico_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -243,7 +243,7 @@ ALTER SEQUENCE public.servico_codservico_seq OWNED BY public.servico.codservico;
 
 
 --
--- TOC entry 3197 (class 2604 OID 25007)
+-- TOC entry 3193 (class 2604 OID 25052)
 -- Name: agendamento codagendamento; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -251,7 +251,7 @@ ALTER TABLE ONLY public.agendamento ALTER COLUMN codagendamento SET DEFAULT next
 
 
 --
--- TOC entry 3196 (class 2604 OID 24995)
+-- TOC entry 3195 (class 2604 OID 25053)
 -- Name: cliente codcliente; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -259,7 +259,7 @@ ALTER TABLE ONLY public.cliente ALTER COLUMN codcliente SET DEFAULT nextval('pub
 
 
 --
--- TOC entry 3194 (class 2604 OID 24974)
+-- TOC entry 3196 (class 2604 OID 25054)
 -- Name: endereco idendereco; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -267,7 +267,7 @@ ALTER TABLE ONLY public.endereco ALTER COLUMN idendereco SET DEFAULT nextval('pu
 
 
 --
--- TOC entry 3195 (class 2604 OID 24983)
+-- TOC entry 3197 (class 2604 OID 25055)
 -- Name: funcionario codfuncionario; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -275,7 +275,7 @@ ALTER TABLE ONLY public.funcionario ALTER COLUMN codfuncionario SET DEFAULT next
 
 
 --
--- TOC entry 3193 (class 2604 OID 24965)
+-- TOC entry 3198 (class 2604 OID 25056)
 -- Name: servico codservico; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -283,12 +283,11 @@ ALTER TABLE ONLY public.servico ALTER COLUMN codservico SET DEFAULT nextval('pub
 
 
 --
--- TOC entry 3367 (class 0 OID 25004)
--- Dependencies: 223
+-- TOC entry 3358 (class 0 OID 25027)
+-- Dependencies: 214
 -- Data for Name: agendamento; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.agendamento VALUES (26, '2023-04-22', '09:00:00', 'agendado', 7, 6, 1);
 INSERT INTO public.agendamento VALUES (27, '2023-04-22', '10:00:00', 'agendado', 10, 7, 1);
 INSERT INTO public.agendamento VALUES (28, '2023-04-22', '09:00:00', 'agendado', 11, 8, 3);
 INSERT INTO public.agendamento VALUES (29, '2023-04-22', '10:00:00', 'agendado', 7, 8, 3);
@@ -329,11 +328,12 @@ INSERT INTO public.agendamento VALUES (24, '2023-04-22', '08:00:00', 'finalizado
 INSERT INTO public.agendamento VALUES (25, '2023-04-22', '10:00:00', 'finalizado', 6, 5, 3);
 INSERT INTO public.agendamento VALUES (35, '2023-04-22', '13:00:00', 'cancelado', 1, 14, 3);
 INSERT INTO public.agendamento VALUES (37, '2023-04-22', '16:00:00', 'cancelado', 1, 16, 3);
+INSERT INTO public.agendamento VALUES (26, '2023-04-22', '09:00:00', 'cancelado', 7, 6, 1);
 
 
 --
--- TOC entry 3365 (class 0 OID 24992)
--- Dependencies: 221
+-- TOC entry 3360 (class 0 OID 25032)
+-- Dependencies: 216
 -- Data for Name: cliente; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -360,8 +360,8 @@ INSERT INTO public.cliente VALUES (20, 'Calebe', 'Martins', '(47) 2879-2519', '0
 
 
 --
--- TOC entry 3361 (class 0 OID 24971)
--- Dependencies: 217
+-- TOC entry 3362 (class 0 OID 25036)
+-- Dependencies: 218
 -- Data for Name: endereco; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -385,8 +385,8 @@ INSERT INTO public.endereco VALUES (17, 'Glória', 'Max Colin', 218, 'Apt 201 Bl
 
 
 --
--- TOC entry 3363 (class 0 OID 24980)
--- Dependencies: 219
+-- TOC entry 3364 (class 0 OID 25042)
+-- Dependencies: 220
 -- Data for Name: funcionario; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -405,8 +405,8 @@ INSERT INTO public.funcionario VALUES (12, 'Beatriz', 'Martins', '(48) 3772-7715
 
 
 --
--- TOC entry 3359 (class 0 OID 24962)
--- Dependencies: 215
+-- TOC entry 3366 (class 0 OID 25046)
+-- Dependencies: 222
 -- Data for Name: servico; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -417,7 +417,7 @@ INSERT INTO public.servico VALUES (3, 'Cabelo e Barba', 85, 110);
 
 --
 -- TOC entry 3378 (class 0 OID 0)
--- Dependencies: 222
+-- Dependencies: 215
 -- Name: agendamento_codagendamento_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -426,7 +426,7 @@ SELECT pg_catalog.setval('public.agendamento_codagendamento_seq', 41, true);
 
 --
 -- TOC entry 3379 (class 0 OID 0)
--- Dependencies: 220
+-- Dependencies: 217
 -- Name: cliente_codcliente_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -435,7 +435,7 @@ SELECT pg_catalog.setval('public.cliente_codcliente_seq', 20, true);
 
 --
 -- TOC entry 3380 (class 0 OID 0)
--- Dependencies: 216
+-- Dependencies: 219
 -- Name: endereco_idendereco_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -444,7 +444,7 @@ SELECT pg_catalog.setval('public.endereco_idendereco_seq', 17, true);
 
 --
 -- TOC entry 3381 (class 0 OID 0)
--- Dependencies: 218
+-- Dependencies: 221
 -- Name: funcionario_codfuncionario_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -453,7 +453,7 @@ SELECT pg_catalog.setval('public.funcionario_codfuncionario_seq', 12, true);
 
 --
 -- TOC entry 3382 (class 0 OID 0)
--- Dependencies: 214
+-- Dependencies: 223
 -- Name: servico_codservico_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -461,7 +461,7 @@ SELECT pg_catalog.setval('public.servico_codservico_seq', 3, true);
 
 
 --
--- TOC entry 3210 (class 2606 OID 25010)
+-- TOC entry 3202 (class 2606 OID 25058)
 -- Name: agendamento agendamento_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -470,7 +470,7 @@ ALTER TABLE ONLY public.agendamento
 
 
 --
--- TOC entry 3208 (class 2606 OID 24997)
+-- TOC entry 3204 (class 2606 OID 25060)
 -- Name: cliente cliente_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -479,7 +479,7 @@ ALTER TABLE ONLY public.cliente
 
 
 --
--- TOC entry 3204 (class 2606 OID 24978)
+-- TOC entry 3206 (class 2606 OID 25062)
 -- Name: endereco endereco_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -488,7 +488,7 @@ ALTER TABLE ONLY public.endereco
 
 
 --
--- TOC entry 3206 (class 2606 OID 24985)
+-- TOC entry 3208 (class 2606 OID 25064)
 -- Name: funcionario funcionario_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -497,7 +497,7 @@ ALTER TABLE ONLY public.funcionario
 
 
 --
--- TOC entry 3202 (class 2606 OID 24969)
+-- TOC entry 3210 (class 2606 OID 25066)
 -- Name: servico servico_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -506,7 +506,7 @@ ALTER TABLE ONLY public.servico
 
 
 --
--- TOC entry 3213 (class 2606 OID 25016)
+-- TOC entry 3211 (class 2606 OID 25067)
 -- Name: agendamento agendamento_codcliente_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -515,7 +515,7 @@ ALTER TABLE ONLY public.agendamento
 
 
 --
--- TOC entry 3214 (class 2606 OID 25011)
+-- TOC entry 3212 (class 2606 OID 25072)
 -- Name: agendamento agendamento_codfuncionario_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -524,7 +524,7 @@ ALTER TABLE ONLY public.agendamento
 
 
 --
--- TOC entry 3215 (class 2606 OID 25021)
+-- TOC entry 3213 (class 2606 OID 25077)
 -- Name: agendamento agendamento_codservico_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -533,7 +533,7 @@ ALTER TABLE ONLY public.agendamento
 
 
 --
--- TOC entry 3212 (class 2606 OID 24998)
+-- TOC entry 3214 (class 2606 OID 25082)
 -- Name: cliente cliente_idendereco_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -542,7 +542,7 @@ ALTER TABLE ONLY public.cliente
 
 
 --
--- TOC entry 3211 (class 2606 OID 24986)
+-- TOC entry 3215 (class 2606 OID 25087)
 -- Name: funcionario funcionario_idendereco_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -550,7 +550,7 @@ ALTER TABLE ONLY public.funcionario
     ADD CONSTRAINT funcionario_idendereco_fkey FOREIGN KEY (idendereco) REFERENCES public.endereco(idendereco);
 
 
--- Completed on 2023-04-26 16:49:48
+-- Completed on 2023-04-27 14:39:41
 
 --
 -- PostgreSQL database dump complete

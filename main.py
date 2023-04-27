@@ -444,7 +444,7 @@ while True:
                 input("Press Enter to continue...")
                 continue
             else:
-                print(tabulate(result, tablefmt='outline', showindex='always', headers=['codservico','tiposervico','preco','tempomedio']))
+                print(tabulate(result, tablefmt='outline', showindex='always', headers=['idendereco','bairro','rua','numero','complemento','uf','cidade']))
             
             bairro = input("Bairro: ")
             rua = input("Rua: ")
@@ -543,32 +543,33 @@ while True:
     if res['opcao'] == 'Relatórios':
         rel = menuRelatorios()
         
-        if rel['opcao'] == 'Cliente':
-            cursor.execute("SELECT * FROM cliente")
+        if rel['opcao'] == 'Total Ganho por Funcionário':
+            cursor.execute("SELECT f.codfuncionario, f.nome, f.sobrenome, COUNT(a.codagendamento) AS quantidade, SUM(s.preco) AS total FROM agendamento a JOIN funcionario f ON a.codfuncionario = f.codfuncionario JOIN servico s ON a.codservico = s.codservico AND a.situacao = 'finalizado' GROUP BY f.codfuncionario ORDER BY total DESC")
             result = cursor.fetchall()
             if result == []:
                 print('Tabela Vazia')
             else:
-                print(tabulate(result, tablefmt='outline', showindex='always', headers=['codcliente','nome','sobrenome','telefone','cpf','rg','dtnascimento','genero','idendereco']))
+                print(tabulate(result, tablefmt='outline', showindex='always', headers=['codfuncionario','nome','sobrenome','quantidade','total']))
             input("Press Enter to continue...")
 
-        if rel['opcao'] == 'Funcionario':
-            cursor.execute("SELECT * FROM cliente")
+        if rel['opcao'] == 'Quantidade de Cancelamentos por Cliente':
+            cursor.execute("SELECT c.codcliente, c.nome, c.sobrenome, e.bairro, SUM(s.preco) AS total, COUNT(a.codagendamento) AS quantidade FROM cliente c LEFT JOIN endereco e ON e.idendereco = c.idendereco JOIN agendamento a ON c.codcliente = a.codcliente JOIN servico s ON s.codservico = a.codservico AND a.situacao = 'cancelado' GROUP BY c.codcliente, e.bairro ORDER BY quantidade DESC, c.codcliente")
             result = cursor.fetchall()
             if result == []:
                 print('Tabela Vazia')
             else:
-                print(tabulate(result, tablefmt='outline', showindex='always', headers=['codcliente','nome','sobrenome','telefone','cpf','rg','dtnascimento','genero','idendereco']))
+                print(tabulate(result, tablefmt='outline', showindex='always', headers=['codcliente','nome','sobrenome','bairro','total','quantidade']))
             input("Press Enter to continue...")
 
-        if rel['opcao'] == 'Endereço':
-            cursor.execute("SELECT * FROM cliente")
+        if rel['opcao'] == 'Futuros Ganhos por Funcionário':
+            cursor.execute("SELECT f.codfuncionario, f.nome, f.sobrenome, COUNT(a.codagendamento) AS quantidade, SUM(s.preco) AS total FROM agendamento a JOIN funcionario f ON a.codfuncionario = f.codfuncionario JOIN servico s ON a.codservico = s.codservico AND a.situacao = 'agendado' GROUP BY f.codfuncionario ORDER BY total DESC")
             result = cursor.fetchall()
             if result == []:
                 print('Tabela Vazia')
             else:
-                print(tabulate(result, tablefmt='outline', showindex='always', headers=['idendereco','bairro','rua','numero','complemento','uf','cidade']))
+                print(tabulate(result, tablefmt='outline', showindex='always', headers=['codfuncionario','nome','sobrenome','quantidade','total']))
             input("Press Enter to continue...")
 # -----------------------------------------------------------------------       
     if res['opcao'] == 'Sair':
+        db.close()
         break

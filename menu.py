@@ -57,7 +57,7 @@ def menuRelatorios():
         relatorio = [
                 inquirer.List('opcao',
                                 message="Qual relatorio deseja Exibir",
-                                choices=['Cliente', 'Funcionario', 'Endereço', 'Voltar'],
+                                choices=['Total Ganho por Funcionário', 'Quantidade de Cancelamentos por Cliente', 'Futuros Ganhos por Funcionário', 'Voltar'],
                             ),
             ]
         answers = inquirer.prompt(relatorio)
