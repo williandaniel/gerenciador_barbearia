@@ -7,6 +7,7 @@ O domínio escolhido para o projeto da disciplina de Banco de Dados II foi uma B
 ### Requisitos da Aplicação
  - PostgreSQL
  - Python
+ - Visual Studio Code ou qualquer outro editor de texto
  
 ### Faça uma Copia do Repositório para sua máquina
  - Clique em Code
@@ -40,6 +41,28 @@ O domínio escolhido para o projeto da disciplina de Banco de Dados II foi uma B
  - Clique em Executar
  
 <img width="614" alt="Captura de tela 2023-04-26 185058" src="https://user-images.githubusercontent.com/40742096/234868331-ae2e6ceb-7201-48fe-8b7a-87a101b58c37.png">
+
+### Executando e Compilando
+
+ - Abrir o editor Visual Studio Code
+ - Clique em File > Open Folder
+ - Selecione a pasta que o repositório foi baixado
+
+ ![image](https://user-images.githubusercontent.com/40742096/234871150-09680baa-2230-43e6-a564-9051bbf617e1.png)
+ 
+ - Abrir o arquivo main.py
+ - Altere os campos user, password e port de acesso ao banco
+ 
+![image](https://user-images.githubusercontent.com/40742096/234873670-ddbc0e68-a9a5-44e0-923c-0b832934b5f8.png)
+
+- Abrir o terminal do VS Code
+- Digite o comando `pip install -r requirements.txt` no terminal para instalar as dependências do Python necessarias para a execução da aplicação 
+
+<img width="329" alt="Captura de tela 2023-04-27 101915" src="https://user-images.githubusercontent.com/40742096/234874199-859f3652-04a1-4d55-a60d-a79a280607ea.png">
+
+- Digite o comando `python main.py` no terminal para executar a aplicação
+
+![image](https://user-images.githubusercontent.com/40742096/234876020-611febe0-8430-4e22-99a9-6116a634acf9.png)
 
 
 
