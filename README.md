@@ -52,7 +52,7 @@ O domínio escolhido para o projeto da disciplina de Banco de Dados II foi uma B
  ![image](https://user-images.githubusercontent.com/40742096/234871150-09680baa-2230-43e6-a564-9051bbf617e1.png)
  
  - Abrir o arquivo main.py
- - Altere os campos user, password e port de acesso ao banco
+ - Altere os campos user, password e port para o acesso ao banco
  
 ![image](https://user-images.githubusercontent.com/40742096/234873670-ddbc0e68-a9a5-44e0-923c-0b832934b5f8.png)
 
