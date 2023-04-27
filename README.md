@@ -1,6 +1,6 @@
 # Gerenciador Barbearia
 
-O domínio escolhido para o projeto da disciplina de Banco de Dados II foi uma Barbearia, que consiste na ideia de Gerenciar o agendamento entre Cliente e Funcionário e o serviço que será prestado. 
+O domínio escolhido para o projeto da disciplina de Banco de Dados II foi uma Barbearia, a ideia consiste em Gerenciar o agendamento entre o Cliente e Funcionário e o serviço que será prestado. 
 
 ## Instruções para a compilação e execução da aplicação
 
