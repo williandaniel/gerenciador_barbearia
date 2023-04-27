@@ -16,14 +16,30 @@ O domínio escolhido para o projeto da disciplina de Banco de Dados II foi uma B
 
  
 ### Criando o Banco de Dados
-  - Abrir o pgAdmin
+ - Abrir o pgAdmin
   
 ![pgAdmin4](https://user-images.githubusercontent.com/40742096/234708693-a42f522f-7b08-465e-8a85-72db77a24c84.png)
 
-- Clique com o direito em Databases, selecione Create > Database
+ - Clique com o direito em Databases, selecione Create > Database
 
 ![image](https://user-images.githubusercontent.com/40742096/234709548-f7b55ae7-0d09-421c-96d4-cbd02a5e56f0.png)
 
-- Nomeie o banco como db_atacadista e clique em Save.
+ - Nomeie o banco como db_atacadista e clique em Save.
 
 ![image](https://user-images.githubusercontent.com/40742096/234709747-0dab4b09-2c35-4146-ac7a-416de6dfbc60.png)
+
+ - Clique em Databases
+ - Clique com o direito em db_barbearia e selecione Query Tool
+ 
+ ![Captura de tela 2023-04-26 184940](https://user-images.githubusercontent.com/40742096/234866485-4594de66-46e9-4867-a6f2-d7cf22258c04.png)
+ 
+ - Copie o Contéudo do arquivo db_barbearia.sql ou araste o arquivo dentro da Query Tool
+ 
+ <img width="101" alt="Captura de tela 2023-04-27 095141" src="https://user-images.githubusercontent.com/40742096/234867528-dfd0b4c6-23ac-4585-9079-84a1ccdca151.png">
+ 
+ - Clique em Executar
+ 
+<img width="614" alt="Captura de tela 2023-04-26 185058" src="https://user-images.githubusercontent.com/40742096/234868331-ae2e6ceb-7201-48fe-8b7a-87a101b58c37.png">
+
+
+
